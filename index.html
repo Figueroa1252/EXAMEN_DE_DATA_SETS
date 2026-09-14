@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor & Fuego | Menú Digital</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <h1>Sabor <span>& Fuego</span> 🔥</h1>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Carta</a>
+      <a href="admin.html">Panel Dueño</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="margin-bottom: 2rem; text-align: center;">
+      <h2 style="font-size: 2rem;">Nuestra Carta Artesanal</h2>
+      <p style="color: var(--text-muted);">Hamburguesas de autor, acompañamientos crujientes y bebidas frías.</p>
+    </section>
+
+    <!-- Filtros de categoría -->
+    <div class="categories-filter" id="categories-filter">
+      <button class="filter-btn active" data-category="Todos">Todos</button>
+    </div>
+
+    <!-- Grid donde se renderizan los platos dinámicamente -->
+    <div class="menu-grid" id="menu-grid">
+      <!-- Carga dinámica vía JS -->
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

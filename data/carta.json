@@ -1,0 +1,110 @@
+[
+  {
+    "id_plato": "PLT-001",
+    "plato": "Hamburguesa Fuego Clásica",
+    "categoria": "Hamburguesas",
+    "insumo_critico": "Carne Angus 180g",
+    "stock_actual": 45,
+    "costo": 12000,
+    "precio_venta": 24000
+  },
+  {
+    "id_plato": "PLT-002",
+    "plato": "Smash Cheddar Bacon",
+    "categoria": "Hamburguesas",
+    "insumo_critico": "Queso Cheddar Importado",
+    "stock_actual": 8,
+    "costo": 14000,
+    "precio_venta": 28000
+  },
+  {
+    "id_plato": "PLT-003",
+    "plato": "Burger Volcán BBQ",
+    "categoria": "Hamburguesas",
+    "insumo_critico": "Salsa BBQ Ahumada",
+    "stock_actual": 22,
+    "costo": 15000,
+    "precio_venta": 30000
+  },
+  {
+    "id_plato": "PLT-004",
+    "plato": "Veggie Mushroom Burger",
+    "categoria": "Hamburguesas",
+    "insumo_critico": "Portobello Fresco",
+    "stock_actual": 12,
+    "costo": 11000,
+    "precio_venta": 25000
+  },
+  {
+    "id_plato": "PLT-005",
+    "plato": "Papas Rústicas Fuego",
+    "categoria": "Acompañamientos",
+    "insumo_critico": "Papa Sabanera",
+    "stock_actual": 60,
+    "costo": 4000,
+    "precio_venta": 12000
+  },
+  {
+    "id_plato": "PLT-006",
+    "plato": "Papas Loaded Cheddar & Bacon",
+    "categoria": "Acompañamientos",
+    "insumo_critico": "Topping de Tocineta Crispy",
+    "stock_actual": 5,
+    "costo": 7000,
+    "precio_venta": 18000
+  },
+  {
+    "id_plato": "PLT-007",
+    "plato": "Aros de Cebolla Crunch",
+    "categoria": "Acompañamientos",
+    "insumo_critico": "Mezcla de Empanizado",
+    "stock_actual": 30,
+    "costo": 3500,
+    "precio_venta": 10000
+  },
+  {
+    "id_plato": "PLT-008",
+    "plato": "Limonada de Coco Artesanal",
+    "categoria": "Bebidas",
+    "insumo_critico": "Crema de Coco",
+    "stock_actual": 40,
+    "costo": 2500,
+    "precio_venta": 9000
+  },
+  {
+    "id_plato": "PLT-009",
+    "plato": "Gaseosa Artesanal de Frutos Rojos",
+    "categoria": "Bebidas",
+    "insumo_critico": "Sirope Frutos Rojos",
+    "stock_actual": 35,
+    "costo": 2000,
+    "precio_venta": 8000
+  },
+  {
+    "id_plato": "PLT-010",
+    "plato": "Cerveza IPA Especial",
+    "categoria": "Bebidas",
+    "insumo_critico": "Cerveza Artesanal",
+    "stock_actual": 18,
+    "costo": 5000,
+    "precio_venta": 12000
+  },
+  {
+    "id_plato": "PLT-011",
+    "plato": "Churros con Arequipe Fuego",
+    "categoria": "Postres",
+    "insumo_critico": "Arequipe Premium",
+    "stock_actual": 25,
+    "costo": 3000,
+    "precio_venta": 11000
+  },
+  {
+    "id_plato": "PLT-012",
+    "plato": "Milkshake de Pie de Limón",
+    "categoria": "Postres",
+    "insumo_critico": "Helado Artesanal Vainilla",
+    "stock_actual": 9,
+    "costo": 4500,
+    "precio_venta": 14000
+  }
+]

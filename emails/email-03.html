@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Cancelado</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f4f5; font-family: Arial, sans-serif; color: #333333;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f4f4f5; padding: 20px 0;">
+        <tr>
+            <td align="center">
+                <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    
+                    <!-- Encabezado -->
+                    <tr>
+                        <td style="background-color: #ef4444; padding: 25px; text-align: center;">
+                            <h1 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: bold;">🍔 Food Truck</h1>
+                            <p style="color: #fee2e2; margin: 5px 0 0 0; font-size: 14px;">Actualización del pedido</p>
+                        </td>
+                    </tr>
+
+                    <!-- Cuerpo principal -->
+                    <tr>
+                        <td style="padding: 30px;">
+                            <h2 style="color: #dc2626; margin-top: 0; font-size: 20px;">Tu pedido ha sido cancelado</h2>
+                            <p style="font-size: 15px; line-height: 1.5; color: #4b5563;">
+                                Hola, sentimos informarte que tu pedido <strong>#{{ID_PEDIDO}}</strong> no pudo ser procesado y ha sido cancelado.
+                            </p>
+                            
+                            <!-- Causa del problema -->
+                            <div style="background-color: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin: 20px 0; border-radius: 0 4px 4px 0;">
+                                <p style="margin: 0; font-size: 14px; color: #991b1b;">
+                                    <strong>Motivo:</strong> {{MOTIVO_CANCELACION}}
+                                </p>
+                            </div>
+
+                            <!-- Resumen del Pedido Cancelado -->
+                            <h3 style="color: #1f2937; font-size: 16px; margin-top: 25px; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px;">
+                                Detalle de los productos
+                            </h3>
+                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-top: 10px;">
+                                <thead>
+                                    <tr style="text-align: left; color: #6b7280; font-size: 12px; text-transform: uppercase;">
+                                        <th style="padding: 8px 0;">Producto</th>
+                                        <th style="padding: 8px 0; text-align: center;">Cant.</th>
+                                        <th style="padding: 8px 0; text-align: right;">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Reemplazar dinámicamente -->
+                                    <tr style="border-bottom: 1px solid #f3f4f6; font-size: 14px; color: #374151;">
+                                        <td style="padding: 10px 0;">{{PRODUCTO_NOMBRE}}</td>
+                                        <td style="padding: 10px 0; text-align: center;">{{CANTIDAD}}</td>
+                                        <td style="padding: 10px 0; text-align: right;">${{PRECIO_TOTAL}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- Mensaje de soporte -->
+                            <p style="font-size: 14px; line-height: 1.5; color: #6b7280; margin-top: 25px;">
+                                Si realizaste un pago previo o crees que esto es un error, ponte en contacto con nuestro equipo de soporte inmediatamente para colaborarte.
+                            </p>
+
+                            <!-- Botón de Contacto -->
+                            <div style="text-align: center; margin-top: 30px;">
+                                <a href="mailto:soporte@foodtruck.com" style="background-color: #374151; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: bold; font-size: 14px; display: inline-block;">
+                                    Contactar a Soporte
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Pie de página -->
+                    <tr>
+                        <td style="background-color: #f9fafb; padding: 20px; text-align: center; border-top: 1px solid #e5e7eb;">
+                            <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+                                © 2026 Food Truck App. Todos los derechos reservados.
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
