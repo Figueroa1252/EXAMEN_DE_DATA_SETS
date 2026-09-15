@@ -1,0 +1,10 @@
+# Entornos y logs de sistema
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+
+# Archivos de configuración local o llaves (si aplica)
+.env
+.vscode/
+.idea/

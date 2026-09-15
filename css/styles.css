@@ -50,10 +50,11 @@ nav a {
   text-decoration: none;
   margin-left: 1.5rem;
   font-weight: 600;
-  transition: color 0.3rem;
+  transition: color 0.3s ease;
 }
 
-nav a:hover, nav a.active {
+nav a:hover, 
+nav a.active {
   color: var(--secondary);
 }
 
@@ -81,10 +82,11 @@ nav a:hover, nav a.active {
   border-radius: 20px;
   cursor: pointer;
   white-space: nowrap;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover, 
+.filter-btn.active {
   background: var(--primary);
   border-color: var(--primary);
 }
@@ -148,78 +150,12 @@ nav a:hover, nav a.active {
   color: var(--secondary);
 }
 
-/* Dashboard Styles */
-.kpi-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.2rem;
-  margin-bottom: 2.5rem;
+/* Regla para corregir el contraste en la tabla del panel */
+.admin-table {
+  color: #1a1a1a;
 }
 
-.kpi-card {
-  background: var(--card-bg);
-  padding: 1.2rem;
-  border-radius: 10px;
-  border-left: 4px solid var(--primary);
-}
-
-.kpi-title {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-}
-
-.kpi-value {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-top: 0.4rem;
-}
-
-.dashboard-section {
-  background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
-
-.dashboard-section h2 {
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-  color: var(--secondary);
-}
-
-/* Custom Visual Bars (Vanilla Chart) */
-.bar-item {
-  margin-bottom: 1rem;
-}
-
-.bar-label {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.3rem;
-  font-size: 0.9rem;
-}
-
-.bar-track {
-  background: #333;
-  height: 12px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.bar-fill {
-  background: var(--primary);
-  height: 100%;
-  width: 0%;
-  transition: width 0.8s ease-in-out;
-}
-
-.alert-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.8rem;
-  background: rgba(233, 196, 106, 0.1);
-  border-left: 3px solid var(--warning);
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
+.admin-table th {
+  color: #1a1a1a;
+  background-color: #e0e0e0;
 }

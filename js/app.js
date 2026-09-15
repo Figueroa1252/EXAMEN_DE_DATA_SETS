@@ -6,16 +6,21 @@ let menuData = [];
 
 async function initApp() {
   try {
-    const response = await fetch('data/carta.json');
-    if (!response.ok) throw new Error('Error al cargar la carta');
+    const localData = localStorage.getItem('carta_data');
+    if (localData) {
+      menuData = JSON.parse(localData);
+    } else {
+      const response = await fetch('carta.json');
+      if (!response.ok) throw new Error('Error al cargar la carta');
+      menuData = await response.json();
+    }
     
-    menuData = await response.json();
     setupCategories(menuData);
     renderMenu(menuData);
   } catch (error) {
     console.error(error);
     document.getElementById('menu-grid').innerHTML = 
-      `<p style="color: var(--primary);">Error cargando la carta. Asegúrate de estar ejecutando un servidor local.</p>`;
+      `<p style="color: var(--primary);">Error cargando la carta. Asegúrate de ejecutar un servidor local.</p>`;
   }
 }
 
